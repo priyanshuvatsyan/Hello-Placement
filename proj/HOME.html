@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body {
+            background-color: #fffcd8;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav li {
+            margin-right: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .KRINKY {
+            font-size: 50px;
+            margin-left: 150px;
+        }
+
+        .HOME {
+            margin-left: 350px;
+        }
+
+        .CONTACT {
+            background-color: rgb(243, 129, 22);
+            color: aliceblue;
+            padding: 10px 20px;
+            box-shadow: 5px 5px rgb(46, 45, 49);
+            margin-left: 200px;
+        }
+
+        .KRINKY,
+        .HOME,
+        .SERVICES,
+        .JOBS,
+        .PORTFOLIO,
+        .CONTACT {
+            font-size: 18px;
+        }
+
+        a:hover {
+            color: rgb(243, 129, 22);
+        }
+
+        .page1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        .page1h,
+        .page1h2 {
+            flex: 1;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 24px;
+        }
+
+        .iam {
+            font-size: 36px;
+        }
+
+        .Based {
+            font-size: 20px;
+        }
+
+        .start {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: rgb(243, 129, 22);
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            box-shadow: 5px 5px rgb(46, 45, 49);
+        }
+
+        .page1h2 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .slide {
+            background-color: #333;
+            color: aliceblue;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .slide ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .slide li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .pagemain2 {
+            background-color: #fff;
+        }
+
+        .page2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0;
+            align-items: center;
+        }
+
+        .pagep1 {
+            flex: 1;
+            text-align: center;
+        }
+
+        .pagep2 {
+            flex: 1;
+        }
+
+        .pagep1 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .para {
+            font-size: 16px;
+        }
+
+        .project,
+        .client {
+            display: inline-block;
+            margin-right: 20px;
+            text-align: center;
+        }
+
+        .number {
+            color: rgb(243, 129, 22);
+        }
+
+        .requirements,
+        .PORTFOLIO1 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(46, 45, 49);
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .requirements:hover,
+        .PORTFOLIO1:hover {
+            box-shadow: 5px 5px rgb(243, 129, 22);
+        }
+
+        .page3 {
+            margin-top: 250px;
+        }
+
+        .page3v1,
+        .page3v2 {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .page3v1 {
+            vertical-align: top;
+        }
+
+        .skills {
+            font-size: 8px;
+        }
+
+        .HTML {
+            padding-left: 65px;
+            padding-right: 65px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(75, 173, 152);
+        }
+
+        .CSS {
+
+            padding-left: 65px;
+            padding-right: 65px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(214, 195, 19);
+
+        }
+
+        .JS {
+            padding-left: 65px;
+            padding-right: 65px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(189, 164, 147);
+        }
+
+        .Angular {
+            padding-left: 65px;
+            padding-right: 65px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(70, 105, 202);
+        }
+
+        .ios {
+            padding-left: 65px;
+            padding-right: 65px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(127, 175, 16);
+        }
+
+        .App {
+            padding-left: 65px;
+            padding-right: 65px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(110, 111, 179);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-left: 50px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        button:hover {
+            box-shadow: 5px 5px rgb(46, 45, 49);
+        }
+
+        img {
+            size-adjust: 20px 20px;
+        }
+
+        .skills {
+            margin-top: 120px;
+            margin-left: 290px;
+        }
+
+        .MYSKILLS {
+            margin-left: 50px;
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        button:hover {
+            box-shadow: 5px 5px rgb(46, 45, 49);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .intrested {
+            background-color: #333;
+            color: aliceblue;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .CONTACTNOW {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(255, 200, 47);
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 5px 5px rgb(243, 129, 22);
+        }
+
+        /* Add this CSS to your existing styles */
+        .slide ul {
+            list-style: none;
+            padding: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: slide 17s linear infinite; /* Adjust the animation duration as needed */
+        }
+
+        .slide li {
+            display: inline-block;
+            margin-right: 80px;
+            animation: slide-item 5s linear infinite alternate; /* Animation for individual items */
+        }
+
+        .imgs {
+            margin-top: 90px;
+            margin-bottom: 90px;
+        }
+
+        #typed-text {
+            overflow: hidden;
+            border-right: 0.15em solid orange; /* Cursor style */
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.15em;
+            animation: typing 3s steps(30) infinite, blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange }
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes slide-item {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a class="KRINKY" href="">Hello_Placement</a></li>
+                <li><a class="HOME" href="HOME.html">HOME</a></li>
+                <li><a class="SERVICES" href="Preperation.html">Preperation</a></li>
+                <li><a class="JOBS" href="jobs.html">JOBS</a></li>
+                <li><a class="PORTFOLIO" href="howto.html">How To</a></li>
+                <li><a class="NEWS" href="news.html">NEWS</a></li>
+                <li><a class="EVENTS" href="events.html">EVENTS</a></li>
+              
+                <li><a class="SUCCESSSTORIES" href="success_stories.html">SUCCESS STORIES</a></li>
+                <li><a class="CONTACT" href="">CONTACT US</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    <div class="page1">
+        <div class="page1h">
+            <!-- Typewriter animation for "Want dream job?" -->
+            <h1 class="iam"><span id="typed-text"></span></h1>
+            <h4 class="name"> Here's what you need to know</h4>
+            <a class="start" href="Preperation.html">LET'S START</a>
+        </div>
+        <div class="page1h2">
+            <!-- Your existing content -->
+            <div class="imgs">
+                <img src="1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <!-- Your slide content goes here -->
+        <ul>
+            <li class="slide-item">Google</li>
+            <li class="slide-item">Microsoft</li>
+            <li class="slide-item">Infosys</li>
+            <li class="slide-item">Wipro</li>
+            <li class="slide-item">Amazone</li>
+            <li class="slide-item">Tech Mahindra</li>
+            <li class="slide-item">Tata Consultancy Services (TCS)</li>
+        </ul>
+    </div>
+    <div class="pagemain2">
+        <!-- Your page 2 content goes here -->
+        <div class="page2">
+            <div class="pagep1">
+                <img class="page2img"  style="height: 600px; width: 600px;" src="page2.jpg" alt="">
+            </div>
+            <div class="pagep2">
+                <h1> Key Steps to Secure a Tech Job as a Computer Science Student </h1>
+              
+                    <li class="key">Education & Fundamentals</li>
+                    <li class="key">Practical Experience</li>
+                    <li class="key">Portfolio & Coding</li>
+                    <li class="key">Networking</li>
+                    <li class="key">Resume & Research</li>
+                    <li class="key">Apply & Assessments</li>
+                    <li class="key">Interview Skills</li>
+                    <li class="key">Offer Evaluation</li>
+                    <li class="key">Continuous Learning</li>
+               <br><br>
+                    <h2>Check the requirements of Top Companies</h2>
+                    <a class="requirements" href=""> Check requirements</a>
+                </div>
+              
+
+            </div>
+    </div>
+    <div class="page3">
+        <!-- Your page 3 content goes here -->
+        <div class="page3v1">
+
+            <div class="skills">
+                <h1 class="MYSKILLS">SKILLS that most companies ask  </h1>
+                <div class="button-container">
+                    <div class="HTML-button">
+                        <button class="HTML"><img src="java.png" alt="" style="width: 34px; height: 34px; vertical-align: middle; margin-right: 25px;">Java</button>
+                    </div>
+                    <div class="CSS-button">
+                        <button class="CSS"><img src="dsa.png" alt="" style="width: 34px; height: 34px; vertical-align: middle; margin-right: 25px;">DSA</button>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <div class="JS-button">
+                        <button class="JS"><img src="os.jpg" alt="" style="width: 34px; height: 34px; vertical-align: middle; margin-right: 25px;">OS</button>
+                    </div>
+                    <div class="Angular-button">
+                        <button class="Angular"> <img src="cn.jpeg" alt="" style="width: 34px; height: 34px; vertical-align: middle; margin-right: 25px;"> CN</button>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <div class="App-button">
+                        <button class="App"> <img src="app.jpeg" alt="" style="width: 34px; height: 34px; vertical-align: middle; margin-right: 25px;"> App_Dev</button>
+                    </div>
+                    <div class="ios-button">
+                        <button class="ios"><img src="html.png" alt="" style="width: 34px; height: 34px; vertical-align: middle; margin-right: 25px;"> Frontend</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="page3v2">
+            <img src="skills.png" alt="" style="height: 600px; width: 600px; margin-bottom: 50px; margin-top: -50px; margin-left: 150px;" >
+        </div>
+    </div>
+
+ 
+
+    </div>
+    <div class="intrested">
+        <h1>Intrested working with me? <a class="CONTACTNOW" href="">CONTACT NOW</a></h1>
+    </div>
+
+    <!-- JavaScript for the typewriter animation -->
+    <script>
+        const text = "Want dream job?";
+        const delay = 3000; // 3 seconds
+
+        let charIndex = 0;
+        const typedText = document.getElementById("typed-text");
+
+        function type() {
+            if (charIndex < text.length) {
+                typedText.textContent += text.charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 50); // Typing speed in milliseconds
+            } else {
+                setTimeout(erase, delay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                typedText.textContent = text.substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, 50); // Erasing speed in milliseconds
+            } else {
+                charIndex = 0;
+                setTimeout(type, 50); // Start typing again
+            }
+        }
+
+        // Start the animation
+        setTimeout(type, delay);
+
+    </script>
+</body>
+
+</html>
